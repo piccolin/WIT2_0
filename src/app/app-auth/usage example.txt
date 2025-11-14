@@ -1,0 +1,9 @@
+app.route.ts
+
+  {
+    path: 'import',
+    loadComponent: () => import('./product/csv-import/csv-import.component')
+      .then(m => m.CsvImportComponent),
+    title: 'Dashboard',
+    canActivate: [AuthGuard]
+  }

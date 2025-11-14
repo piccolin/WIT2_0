@@ -21,7 +21,7 @@ import { CommonModule } from '@angular/common';
 
 // External lib for CSV parsing (add to package.json: "papaparse": "^5.4.1")
 import Papa from 'papaparse';
-import {CabinetProductGraphqlService} from "../../app-data/stores/cabinet-product-graphql.service";
+import {CabinetProductGraphqlService} from "@app/app-data/stores/cabinet-product-graphql.service";
 
 // Import generated types from Amplify API
 import {
