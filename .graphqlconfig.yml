@@ -1,0 +1,20 @@
+projects:
+  wit20:
+    schemaPath: amplify/backend/api/wit20/build/schema.graphql
+    includes:
+      - src/graphql/**/*.ts
+    excludes:
+      - ./amplify/**
+      - src/app/API.service.ts
+    extensions:
+      amplify:
+        codeGenTarget: typescript
+        generatedFileName: src/app/API.service.ts
+        docsFilePath: src/graphql
+        region: us-east-2
+        apiId: null
+        amplifyJsLibraryVersion: 6
+        maxDepth: 3
+extensions:
+  amplify:
+    version: 3
